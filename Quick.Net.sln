@@ -9,13 +9,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{E54B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0574501A-0D3B-4411-AAC6-05FE02F3F616}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quick.Net.Gateway", "src\Quick.Net.Gateway\Quick.Net.Gateway.csproj", "{E479BC95-B136-4462-B14C-A172195B247D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quick.Net.Gateway", "src\Quick.Net.Gateway\Quick.Net.Gateway.csproj", "{E479BC95-B136-4462-B14C-A172195B247D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Generators", "Generators", "{9C9D9BBF-2193-4851-8435-18CF99C01626}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quick.Net.FrameWork", "src\Quick.Net.FrameWork\Quick.Net.FrameWork.csproj", "{2FC98AAE-0100-4482-819C-C1B450AAA9B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quick.Net.CAP", "src\Quick.Net.CAP\Quick.Net.CAP.csproj", "{2E13EABD-4326-4315-B83A-2F6336A7A9DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quick.Net.CAP", "src\Quick.Net.CAP\Quick.Net.CAP.csproj", "{2E13EABD-4326-4315-B83A-2F6336A7A9DD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quick.Net.Provider.Nacos", "src\Quick.Net.Provider.Nacos\Quick.Net.Provider.Nacos.csproj", "{24529DB0-80DF-4FC3-B1B0-9EA3DFF0CAC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{2E13EABD-4326-4315-B83A-2F6336A7A9DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E13EABD-4326-4315-B83A-2F6336A7A9DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E13EABD-4326-4315-B83A-2F6336A7A9DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24529DB0-80DF-4FC3-B1B0-9EA3DFF0CAC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24529DB0-80DF-4FC3-B1B0-9EA3DFF0CAC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24529DB0-80DF-4FC3-B1B0-9EA3DFF0CAC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24529DB0-80DF-4FC3-B1B0-9EA3DFF0CAC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 		{9C9D9BBF-2193-4851-8435-18CF99C01626} = {FD503355-4E14-457A-9DCE-F790187A8955}
 		{2FC98AAE-0100-4482-819C-C1B450AAA9B9} = {9C9D9BBF-2193-4851-8435-18CF99C01626}
 		{2E13EABD-4326-4315-B83A-2F6336A7A9DD} = {FD503355-4E14-457A-9DCE-F790187A8955}
+		{24529DB0-80DF-4FC3-B1B0-9EA3DFF0CAC3} = {FD503355-4E14-457A-9DCE-F790187A8955}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {63200B6B-07AA-4F82-9431-7A6653DFEB96}
