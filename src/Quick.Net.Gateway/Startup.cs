@@ -30,6 +30,7 @@ namespace Quick.Net.Gateway
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCustomSwaggerSetup();
+   
             services.AddControllers();
             services.AddCustomOcelotSetup();
         }

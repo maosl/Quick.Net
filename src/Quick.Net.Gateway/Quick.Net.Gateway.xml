@@ -4,6 +4,74 @@
         <name>Quick.Net.Gateway</name>
     </assembly>
     <members>
+        <member name="T:Quick.Net.Gateway.Extensions.SwaggerServiceExtensions">
+            <summary>
+            Swagger 服务扩展
+            </summary>
+        </member>
+        <member name="M:Quick.Net.Gateway.Extensions.SwaggerServiceExtensions.AddMCodeSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection,Quick.Net.Gateway.Extensions.SwaggerOptions)">
+            <summary>
+            添加 Swagger 服务
+            </summary>
+            <param name="services"></param>
+            <param name="swaggerOptions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Quick.Net.Gateway.Extensions.SwaggerServiceExtensions.UseMCodeSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            使用 Swagger UI
+            </summary>
+            <param name="app"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Quick.Net.Gateway.Extensions.SwaggerOptions">
+            <summary>
+            Swagger配置
+            </summary>
+        </member>
+        <member name="P:Quick.Net.Gateway.Extensions.SwaggerOptions.ServiceName">
+            <summary>
+            服务名称
+            </summary>
+        </member>
+        <member name="P:Quick.Net.Gateway.Extensions.SwaggerOptions.ApiInfo">
+            <summary>
+            API信息
+            </summary>
+        </member>
+        <member name="P:Quick.Net.Gateway.Extensions.SwaggerOptions.XmlCommentFiles">
+            <summary>
+            Xml注释文件
+            </summary>
+        </member>
+        <member name="M:Quick.Net.Gateway.Extensions.SwaggerOptions.#ctor(System.String,Microsoft.OpenApi.Models.OpenApiInfo,System.String[])">
+            <summary>
+            构造函数
+            </summary>
+            <param name="serviceName">服务名称</param>
+            <param name="apiInfo">API信息</param>
+            <param name="xmlCommentFiles">Xml注释文件</param>
+        </member>
+        <member name="T:Quick.Net.Gateway.Extensions.OcelotSwaggerOptions">
+            <summary>
+            网关Swagger配置
+            </summary>
+        </member>
+        <member name="T:Quick.Net.Gateway.Extensions.SwaggerEndPoint">
+            <summary>
+            Swagger终端
+            </summary>
+        </member>
+        <member name="P:Quick.Net.Gateway.Extensions.SwaggerEndPoint.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Quick.Net.Gateway.Extensions.SwaggerEndPoint.Url">
+            <summary>
+            地址
+            </summary>
+        </member>
         <member name="M:Quick.Net.Gateway.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
             ┌──────────────────────────────────────────────────────────────┐
             │　描    述：模拟一个网关项目         
