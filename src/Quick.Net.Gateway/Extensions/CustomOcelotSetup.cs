@@ -17,12 +17,12 @@ namespace Quick.Net.Gateway.Extensions
 
             //services.AddAuthentication_JWTSetup();
             services.AddOcelot()
-                .AddDelegatingHandler<CustomResultHandler>()
+                //.AddDelegatingHandler<CustomResultHandler>()
                 //.AddNacosDiscovery()
                 .AddPolly();
         }
 
-        public static async Task<IApplicationBuilder> UseCustomOcelotMildd(this IApplicationBuilder app)
+        public static async Task<IApplicationBuilder> UseCustomOcelot(this IApplicationBuilder app)
         {
             await app.UseOcelot();
             return app;

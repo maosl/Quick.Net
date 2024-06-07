@@ -20,7 +20,7 @@ namespace Quick.Net.Gateway.Extensions
                     Title = "自定义网关 接口文档",
                 });
 
-                var xmlPath = Path.Combine(basePath, "Blog.Core.Gateway.xml");
+                var xmlPath = Path.Combine(basePath, "Quick.Net.Gateway.xml");
                 c.IncludeXmlComments(xmlPath, true);
 
                 c.OperationFilter<AddResponseHeadersFilter>();

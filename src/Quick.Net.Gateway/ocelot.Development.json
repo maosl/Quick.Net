@@ -1,4 +1,4 @@
-{
+﻿{
   "Routes": [
     // blog-svc
     {
@@ -25,9 +25,9 @@
       "DownstreamHeaderTransform": {
         "trace-id": "Trace-Id"
       },
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "GW"
-      },
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "GW"
+      //},
       "DelegatingHandlers": [
         "CustomResultHandler"
       ]
