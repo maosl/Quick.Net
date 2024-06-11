@@ -72,13 +72,6 @@
             地址
             </summary>
         </member>
-        <member name="M:Quick.Net.Gateway.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
-            ┌──────────────────────────────────────────────────────────────┐
-            │　描    述：模拟一个网关项目         
-            │　测    试：在网关swagger中查看具体的服务         
-            │　作    者：anson zhang                                             
-            └──────────────────────────────────────────────────────────────┘
-        </member>
         <member name="M:Quick.Net.Gateway.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
             This method gets called by the runtime. Use this method to add services to the container.

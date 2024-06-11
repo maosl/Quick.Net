@@ -7,13 +7,6 @@ namespace Quick.Net.Gateway
 {
     public class Startup
     {
-        /**
-        *┌──────────────────────────────────────────────────────────────┐
-        *│　描    述：模拟一个网关项目         
-        *│　测    试：在网关swagger中查看具体的服务         
-        *│　作    者：anson zhang                                             
-        *└──────────────────────────────────────────────────────────────┘
-        */
         public Startup(IConfiguration configuration, IWebHostEnvironment env)
         {
             Configuration = configuration;
@@ -29,10 +22,16 @@ namespace Quick.Net.Gateway
         /// <param name="services"></param>
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCustomSwaggerSetup();
-   
+            //services.AddCustomSwaggerSetup();
             services.AddControllers();
             services.AddCustomOcelotSetup();
+            //services.AddMCodeOcelotSwagger(new OcelotSwaggerOptions()
+            //{
+            //    new SwaggerEndPoints()  {
+            //         new SwaggerEndPoint(){ Name="ap1",Url="http://localhost:5000"},
+            //         new SwaggerEndPoint(){ Name="ap2",Url="http://localhost:5000"},
+            //    }
+            //});
         }
         /// <summary>
         ///  This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,7 +48,7 @@ namespace Quick.Net.Gateway
             app.UseAuthentication();
             app.UseAuthorization();
             app.UseCors();
-            app.UseCustomSwaggerMildd(() => Assembly.GetExecutingAssembly().GetManifestResourceStream("Quick.Net.Gateway.index.html"));
+            app.UseMCodeOcelotSwagger();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

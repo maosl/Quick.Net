@@ -35,6 +35,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quick.Net.OrderApi.IService
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quick.Net.OrderApi.Services", "src\Services\Order\Quick.Net.Api.Services\Quick.Net.OrderApi.Services.csproj", "{2FC45559-2900-4799-82A7-85BFDA5E601C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quick.Net.Tasks", "src\Quick.Net.Tasks\Quick.Net.Tasks.csproj", "{D3387A76-B99F-4E22-AEB7-4EEB832A9425}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quick.Net.Common", "src\Quick.Net.Common\Quick.Net.Common.csproj", "{20933855-3914-4FC7-B717-002716CCDCE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{2FC45559-2900-4799-82A7-85BFDA5E601C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FC45559-2900-4799-82A7-85BFDA5E601C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FC45559-2900-4799-82A7-85BFDA5E601C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3387A76-B99F-4E22-AEB7-4EEB832A9425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3387A76-B99F-4E22-AEB7-4EEB832A9425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3387A76-B99F-4E22-AEB7-4EEB832A9425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3387A76-B99F-4E22-AEB7-4EEB832A9425}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20933855-3914-4FC7-B717-002716CCDCE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20933855-3914-4FC7-B717-002716CCDCE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20933855-3914-4FC7-B717-002716CCDCE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20933855-3914-4FC7-B717-002716CCDCE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,6 +111,8 @@ Global
 		{582ABBC9-03F6-489F-972B-8B1C860316E3} = {B05F838C-3852-445B-99DD-9A344B7D6CC4}
 		{BAFB9361-90D5-4E30-B7C9-3F959AED2CFF} = {582ABBC9-03F6-489F-972B-8B1C860316E3}
 		{2FC45559-2900-4799-82A7-85BFDA5E601C} = {582ABBC9-03F6-489F-972B-8B1C860316E3}
+		{D3387A76-B99F-4E22-AEB7-4EEB832A9425} = {FD503355-4E14-457A-9DCE-F790187A8955}
+		{20933855-3914-4FC7-B717-002716CCDCE3} = {FD503355-4E14-457A-9DCE-F790187A8955}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {63200B6B-07AA-4F82-9431-7A6653DFEB96}

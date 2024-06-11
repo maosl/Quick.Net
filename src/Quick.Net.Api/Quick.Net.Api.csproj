@@ -10,4 +10,8 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Services\Order\Quick.Net.Api.IServices\Quick.Net.OrderApi.IServices.csproj" />
+  </ItemGroup>
+
 </Project>

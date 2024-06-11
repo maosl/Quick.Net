@@ -6,8 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Quick.Net.Api.IServices\Quick.Net.OrderApi.IServices.csproj" />
-  </ItemGroup>
-
 </Project>
