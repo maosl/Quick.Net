@@ -18,7 +18,7 @@
 
 <# 
 	var OutputPath1 =Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(Host.TemplateFile+"..")+"..")+"..");
-	OutputPath1=Path.Combine(OutputPath1,"Blog.Core.Repository","Repositories_New");
+	OutputPath1=Path.Combine(OutputPath1,"Quick.Net.Repository","Repositories_New");
 	if (!Directory.Exists(OutputPath1))
 	{
 	    Directory.CreateDirectory(OutputPath1);
@@ -39,11 +39,11 @@ if(tableName!=""){
     #>  
 
 
-using Blog.Core.Repository.Base;
-using Blog.Core.Model.Models;
-using Blog.Core.IRepository;
-using Blog.Core.IRepository.UnitOfWork;
-namespace Blog.Core.Repository
+using Quick.Net.Repository.Base;
+using Quick.Net.Model.Models;
+using Quick.Net.IRepository;
+using Quick.Net.IRepository.UnitOfWork;
+namespace Quick.Net.Repository
 {	
 	/// <summary>
 	/// <#=tableName#>Repository
@@ -76,11 +76,11 @@ namespace Blog.Core.Repository
 	//----------<#=row["TABLE_NAME"].ToString()#>开始----------
     
 
-using Blog.Core.Repository.Base;
-using Blog.Core.Model.Models;
-using Blog.Core.IRepository;
-using Blog.Core.IRepository.UnitOfWork;
-namespace Blog.Core.Repository
+using Quick.Net.Repository.Base;
+using Quick.Net.Model.Models;
+using Quick.Net.IRepository;
+using Quick.Net.IRepository.UnitOfWork;
+namespace Quick.Net.Repository
 {	
 	/// <summary>
 	/// <#=row["TABLE_NAME"].ToString()#>Repository
@@ -105,11 +105,11 @@ namespace Blog.Core.Repository
     
 	//----------开始----------
 	
-using Blog.Core.Repository.Base;
-using Blog.Core.Model.Models;
-using Blog.Core.IRepository;
-using Blog.Core.IRepository.UnitOfWork;
-namespace Blog.Core.Repository
+using Quick.Net.Repository.Base;
+using Quick.Net.Model.Models;
+using Quick.Net.IRepository;
+using Quick.Net.IRepository.UnitOfWork;
+namespace Quick.Net.Repository
 {	
 	/// <summary>
 	/// IBaseRepository

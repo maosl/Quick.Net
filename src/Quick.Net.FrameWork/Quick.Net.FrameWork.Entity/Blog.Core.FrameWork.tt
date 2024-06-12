@@ -16,7 +16,7 @@
 <# var manager = new Manager(Host, GenerationEnvironment, true); #>
 <# 
 	var OutputPath1 =Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(Host.TemplateFile+"..")+"..")+"..");
-	OutputPath1=Path.Combine(OutputPath1,"Blog.Core.Model","Models_New");
+	OutputPath1=Path.Combine(OutputPath1,"Quick.Net.Model","Models_New");
 	if (!Directory.Exists(OutputPath1))
 	{
 	    Directory.CreateDirectory(OutputPath1);
@@ -30,7 +30,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-namespace Blog.Core.Model.Models
+namespace Quick.Net.Model.Models
 {
 	 ///<summary>
 	 ///<#=tableName#>

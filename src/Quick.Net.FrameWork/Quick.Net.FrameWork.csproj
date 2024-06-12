@@ -7,25 +7,25 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="Quick.Net.FrameWork.Entity\Blog.Core.FrameWork.tt">
+    <None Update="Quick.Net.FrameWork.Entity\Quick.Net.FrameWork.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Blog.Core.FrameWork.cs</LastGenOutput>
+      <LastGenOutput>Quick.Net.FrameWork.cs</LastGenOutput>
     </None>
-    <None Update="Quick.Net.FrameWork.IRepository\Blog.Core.FrameWork.IRepository.tt">
+    <None Update="Quick.Net.FrameWork.IRepository\Quick.Net.FrameWork.IRepository.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Blog.Core.FrameWork.IRepository.cs</LastGenOutput>
+      <LastGenOutput>Quick.Net.FrameWork.IRepository.cs</LastGenOutput>
     </None>
-    <None Update="Quick.Net.FrameWork.IServices\Blog.Core.FrameWork.IServices.tt">
+    <None Update="Quick.Net.FrameWork.IServices\Quick.Net.FrameWork.IServices.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Blog.Core.FrameWork.IServices.cs</LastGenOutput>
+      <LastGenOutput>Quick.Net.FrameWork.IServices.cs</LastGenOutput>
     </None>
-    <None Update="Quick.Net.FrameWork.Repository\Blog.Core.FrameWork.Repository.tt">
+    <None Update="Quick.Net.FrameWork.Repository\Quick.Net.FrameWork.Repository.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Blog.Core.FrameWork.Repository.cs</LastGenOutput>
+      <LastGenOutput>Quick.Net.FrameWork.Repository.cs</LastGenOutput>
     </None>
-    <None Update="Quick.Net.FrameWork.Services\Blog.Core.FrameWork.Services.tt">
+    <None Update="Quick.Net.FrameWork.Services\Quick.Net.FrameWork.Services.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Blog.Core.FrameWork.Services.cs</LastGenOutput>
+      <LastGenOutput>Quick.Net.FrameWork.Services.cs</LastGenOutput>
     </None>
   </ItemGroup>
 
@@ -34,25 +34,25 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Quick.Net.FrameWork.IRepository\Blog.Core.FrameWork.IRepository.cs">
+    <Compile Update="Quick.Net.FrameWork.IRepository\Quick.Net.FrameWork.IRepository.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Blog.Core.FrameWork.IRepository.tt</DependentUpon>
+      <DependentUpon>Quick.Net.FrameWork.IRepository.tt</DependentUpon>
     </Compile>
-    <Compile Update="Quick.Net.FrameWork.IServices\Blog.Core.FrameWork.IServices.cs">
+    <Compile Update="Quick.Net.FrameWork.IServices\Quick.Net.FrameWork.IServices.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Blog.Core.FrameWork.IServices.tt</DependentUpon>
+      <DependentUpon>Quick.Net.FrameWork.IServices.tt</DependentUpon>
     </Compile>
-    <Compile Update="Quick.Net.FrameWork.Repository\Blog.Core.FrameWork.Repository.cs">
+    <Compile Update="Quick.Net.FrameWork.Repository\Quick.Net.FrameWork.Repository.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Blog.Core.FrameWork.Repository.tt</DependentUpon>
+      <DependentUpon>Quick.Net.FrameWork.Repository.tt</DependentUpon>
     </Compile>
-    <Compile Update="Quick.Net.FrameWork.Services\Blog.Core.FrameWork.Services.cs">
+    <Compile Update="Quick.Net.FrameWork.Services\Quick.Net.FrameWork.Services.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Blog.Core.FrameWork.Services.tt</DependentUpon>
+      <DependentUpon>Quick.Net.FrameWork.Services.tt</DependentUpon>
     </Compile>
   </ItemGroup>
 

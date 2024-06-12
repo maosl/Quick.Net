@@ -18,7 +18,7 @@
 
 <# 
 	var OutputPath1 =Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(Host.TemplateFile+"..")+"..")+"..");
-	OutputPath1=Path.Combine(OutputPath1,"Blog.Core.IServices","IServices_New");
+	OutputPath1=Path.Combine(OutputPath1,"Quick.Net.IServices","IServices_New");
 	if (!Directory.Exists(OutputPath1))
 	{
 	    Directory.CreateDirectory(OutputPath1);
@@ -40,10 +40,10 @@ if(tableName!=""){
     #>  
 
 
-using Blog.Core.IServices.BASE;
-using Blog.Core.Model.Models;
+using Quick.Net.IServices.BASE;
+using Quick.Net.Model.Models;
 
-namespace Blog.Core.IServices
+namespace Quick.Net.IServices
 {	
 	/// <summary>
 	/// I<#=tableName#>Services
@@ -74,10 +74,10 @@ namespace Blog.Core.IServices
 	//----------<#=row["TABLE_NAME"].ToString()#>开始----------
     
 
-using Blog.Core.IServices.BASE;
-using Blog.Core.Model.Models;
+using Quick.Net.IServices.BASE;
+using Quick.Net.Model.Models;
 
-namespace Blog.Core.IServices
+namespace Quick.Net.IServices
 {	
 	/// <summary>
 	/// <#=row["TABLE_NAME"].ToString()#>Services
@@ -100,10 +100,10 @@ namespace Blog.Core.IServices
     
 	//----------开始----------
 	
-using Blog.Core.IServices.BASE;
-using Blog.Core.Model.Models;
+using Quick.Net.IServices.BASE;
+using Quick.Net.Model.Models;
 
-namespace Blog.Core.IServices
+namespace Quick.Net.IServices
 {	
 	/// <summary>
 	/// IBaseRepository

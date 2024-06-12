@@ -4,25 +4,22 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Blog.Core.Tasks
+namespace Quick.Net.Tasks
 {
     public class Job1TimedService : IHostedService, IDisposable
     {
         private Timer _timer;
-        private readonly IBlogArticleServices _blogArticleServices;
-
         // 这里可以注入
-        public Job1TimedService(IBlogArticleServices blogArticleServices)
+        public Job1TimedService()
         {
-            _blogArticleServices = blogArticleServices;
+         
         }
 
         public Task StartAsync(CancellationToken cancellationToken)
         {
             Console.WriteLine("Job 1 is starting.");
 
-            _timer = new Timer(DoWork, null, TimeSpan.Zero,
-                TimeSpan.FromSeconds(60 * 60));//一个小时
+            _timer = new Timer(DoWork, null, TimeSpan.Zero,TimeSpan.FromSeconds(60 * 60));//一个小时
 
             return Task.CompletedTask;
         }
@@ -31,8 +28,7 @@ namespace Blog.Core.Tasks
         {
             try
             {
-                var model = _blogArticleServices.GetBlogDetails(1).Result;
-                Console.WriteLine($"Job 1 启动成功，获取id=1的博客title为:{model?.btitle}");
+                //实现业务逻辑
             }
             catch (Exception ex)
             {

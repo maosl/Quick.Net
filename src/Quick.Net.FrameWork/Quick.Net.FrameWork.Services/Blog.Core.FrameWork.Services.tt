@@ -18,7 +18,7 @@
 
 <# 
 	var OutputPath1 =Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(Host.TemplateFile+"..")+"..")+"..");
-	OutputPath1=Path.Combine(OutputPath1,"Blog.Core.Services","Services_New");
+	OutputPath1=Path.Combine(OutputPath1,"Quick.Net.Services","Services_New");
 	if (!Directory.Exists(OutputPath1))
 	{
 	    Directory.CreateDirectory(OutputPath1);
@@ -42,14 +42,14 @@ if(tableName!=""){
 
 using System;
 using System.Threading.Tasks;
-using Blog.Core.Common;
-using Blog.Core.IRepository;
-using Blog.Core.IRepository.Base;
-using Blog.Core.IRepository.UnitOfWork;
-using Blog.Core.IServices;
-using Blog.Core.Model.Models;
-using Blog.Core.Services.BASE;
-namespace Blog.Core.Services
+using Quick.Net.Common;
+using Quick.Net.IRepository;
+using Quick.Net.IRepository.Base;
+using Quick.Net.IRepository.UnitOfWork;
+using Quick.Net.IServices;
+using Quick.Net.Model.Models;
+using Quick.Net.Services.BASE;
+namespace Quick.Net.Services
 {	
 	/// <summary>
 	/// <#=tableName#>Services
@@ -89,14 +89,14 @@ namespace Blog.Core.Services
 
 using System;
 using System.Threading.Tasks;
-using Blog.Core.Common;
-using Blog.Core.IRepository;
-using Blog.Core.IRepository.UnitOfWork;
-using Blog.Core.IRepository.Base;
-using Blog.Core.IServices;
-using Blog.Core.Model.Models;
-using Blog.Core.Services.BASE;
-namespace Blog.Core.Services
+using Quick.Net.Common;
+using Quick.Net.IRepository;
+using Quick.Net.IRepository.UnitOfWork;
+using Quick.Net.IRepository.Base;
+using Quick.Net.IServices;
+using Quick.Net.Model.Models;
+using Quick.Net.Services.BASE;
+namespace Quick.Net.Services
 {	
 	/// <summary>
 	/// <#=row["TABLE_NAME"].ToString()#>Services
@@ -128,14 +128,14 @@ namespace Blog.Core.Services
 
 using System;
 using System.Threading.Tasks;
-using Blog.Core.Common;
-using Blog.Core.IRepository;
-using Blog.Core.IRepository.UnitOfWork;
-using Blog.Core.IRepository.Base;
-using Blog.Core.IServices;
-using Blog.Core.Model.Models;
-using Blog.Core.Services.BASE;
-namespace Blog.Core.Services
+using Quick.Net.Common;
+using Quick.Net.IRepository;
+using Quick.Net.IRepository.UnitOfWork;
+using Quick.Net.IRepository.Base;
+using Quick.Net.IServices;
+using Quick.Net.Model.Models;
+using Quick.Net.Services.BASE;
+namespace Quick.Net.Services
 {	
 	/// <summary>
 	/// IBaseRepository

@@ -1,10 +1,10 @@
-﻿using Blog.Core.Common;
+﻿
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Blog.Core.Tasks
+namespace Quick.Net.Tasks
 {
     public class Job2TimedService : IHostedService, IDisposable
     {
@@ -27,7 +27,7 @@ namespace Blog.Core.Tasks
 
         private void DoWork(object state)
         {
-            ConsoleHelper.WriteWarningLine($"Job 2： {DateTime.Now}");
+            //实现业务逻辑
         }
 
         public Task StopAsync(CancellationToken cancellationToken)
