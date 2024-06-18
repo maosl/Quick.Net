@@ -14,11 +14,8 @@ namespace Quick.Net.Gateway.Extensions
         public static void AddCustomOcelotSetup(this IServiceCollection services)
         {
             if (services == null) throw new ArgumentNullException(nameof(services));
-
-            //services.AddAuthentication_JWTSetup();
             services.AddOcelot()
-                //.AddDelegatingHandler<CustomResultHandler>()
-                //.AddNacosDiscovery()
+                .AddNacosDiscovery()
                 .AddPolly();
         }
 

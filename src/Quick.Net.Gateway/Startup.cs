@@ -22,16 +22,8 @@ namespace Quick.Net.Gateway
         /// <param name="services"></param>
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddCustomSwaggerSetup();
             services.AddControllers();
             services.AddCustomOcelotSetup();
-            //services.AddMCodeOcelotSwagger(new OcelotSwaggerOptions()
-            //{
-            //    new SwaggerEndPoints()  {
-            //         new SwaggerEndPoint(){ Name="ap1",Url="http://localhost:5000"},
-            //         new SwaggerEndPoint(){ Name="ap2",Url="http://localhost:5000"},
-            //    }
-            //});
         }
         /// <summary>
         ///  This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,7 +40,6 @@ namespace Quick.Net.Gateway
             app.UseAuthentication();
             app.UseAuthorization();
             app.UseCors();
-            app.UseMCodeOcelotSwagger();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

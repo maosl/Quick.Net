@@ -1,4 +1,4 @@
-
+﻿
 namespace Quick.Net.Gateway
 {
     public class Program
