@@ -1,6 +1,0 @@
-@Quick.Net.Gateway_HostAddress = http://localhost:5118
-
-GET {{Quick.Net.Gateway_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

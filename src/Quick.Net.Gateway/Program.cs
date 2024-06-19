@@ -19,7 +19,7 @@ namespace Quick.Net.Gateway
                 })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>().UseUrls("http://*:9000");
+                    webBuilder.UseStartup<Startup>().UseUrls("https://*:9000");
                 });
     }
 }

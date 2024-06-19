@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.OpenApi.Models;
 using Ocelot.DependencyInjection;
 using Quick.Net.Gateway.Extensions;
 using System.Reflection;
@@ -23,6 +24,10 @@ namespace Quick.Net.Gateway
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo() { Title = "Quick.Net.Gateway", Version = "v1" });
+            });
             services.AddCustomOcelotSetup();
         }
         /// <summary>
@@ -40,6 +45,13 @@ namespace Quick.Net.Gateway
             app.UseAuthentication();
             app.UseAuthorization();
             app.UseCors();
+            app.UseSwagger();
+            //1、第一步，这里不需要以 /swagger 开头
+            app.UseSwaggerUI(o =>
+            {
+                o.SwaggerEndpoint("/Quick.Net.Api/swagger.json", "Quick.Net.Api");
+                o.SwaggerEndpoint("/Quick.Net.Gateway/swagger.json", "Quick.Net.Gateway");
+            });
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

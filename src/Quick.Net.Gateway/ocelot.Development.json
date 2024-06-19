@@ -1,10 +1,10 @@
 ﻿{
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/products",
-      "DownstreamScheme": "http",
-      "UpstreamPathTemplate": "/api/products",
-      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/Quick.Net.Api/swagger.json", //下游配置也要和各自服务里面的配置一致。这是第二点
+      "DownstreamScheme": "https",
+      "UpstreamPathTemplate": "/Quick.Net.Api/swagger.json", //上游配置，这里也不需要/swagger 开头，和网关配置一致。这是第二点
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
       "ServiceName": "Quick.Net.Api",
       "UseServiceDiscovery": true
     }
@@ -12,9 +12,6 @@
   "GlobalConfiguration": {
     "BaseUrl": "http://localhost:9000",
     "ServiceDiscoveryProvider": {
-      //"Scheme": "http",
-      //"Host": "127.0.0.1",
-      //"Port": 8848,
       "Type": "Nacos"
     }
   }
