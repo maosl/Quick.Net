@@ -1,0 +1,6 @@
+@Quick.Net.ProductApi_HostAddress = http://localhost:5076
+
+GET {{Quick.Net.ProductApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
