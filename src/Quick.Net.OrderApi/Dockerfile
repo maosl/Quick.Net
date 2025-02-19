@@ -11,10 +11,10 @@ EXPOSE 8080
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["src/Quick.Net.OrderApi/Quick.Net.OrderApi.csproj", "src/Quick.Net.OrderApi/"]
-RUN dotnet restore "./src/Quick.Net.OrderApi/Quick.Net.OrderApi.csproj"
+COPY ["./Quick.Net.OrderApi.csproj", "Quick.Net.OrderApi/"]
+RUN dotnet restore "./Quick.Net.OrderApi.csproj"
 COPY . .
-WORKDIR "/src/src/Quick.Net.OrderApi"
+WORKDIR "/src/Quick.Net.OrderApi"
 RUN dotnet build "./Quick.Net.OrderApi.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # 此阶段用于发布要复制到最终阶段的服务项目
