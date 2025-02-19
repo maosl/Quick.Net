@@ -1,4 +1,4 @@
-namespace Quick.Net.Api
+﻿namespace Quick.Net.OrderApi
 {
     public class WeatherForecast
     {

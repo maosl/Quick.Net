@@ -1,6 +1,6 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Quick.Net.Api.Controllers
+namespace Quick.Net.OrderApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]

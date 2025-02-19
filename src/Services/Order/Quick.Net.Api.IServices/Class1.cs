@@ -1,4 +1,4 @@
-﻿namespace Quick.Net.Api.IServices
+﻿namespace Quick.Net.OrderApi.IServices
 {
     public class Class1
     {

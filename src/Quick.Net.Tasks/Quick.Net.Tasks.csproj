@@ -5,13 +5,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="QuartzNet\**" />
+    <EmbeddedResource Remove="QuartzNet\**" />
+    <None Remove="QuartzNet\**" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.0" />
     <PackageReference Include="Quartz" Version="3.9.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Quick.Net.Model\Quick.Net.Model.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="QuartzNet\Jobs\" />
   </ItemGroup>
 </Project>

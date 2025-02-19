@@ -14,6 +14,7 @@ namespace Quick.Net.Api
         public IConfiguration Configuration { get; }
         public void ConfigureServices(IServiceCollection services)
         {
+            //服务注册
             services.AddNacosAspNet(Configuration, "nacos");
             services.AddControllers();
             services.AddEndpointsApiExplorer();
