@@ -11,19 +11,19 @@ EXPOSE 8080
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["src/Quick.Net.OrderApi/Quick.Net.OrderApi.csproj", "src/Quick.Net.OrderApi/"]
-RUN dotnet restore "./src/Quick.Net.OrderApi/Quick.Net.OrderApi.csproj"
+COPY ["src/Quick.Net.Gateway/Quick.Net.Gateway.csproj", "src/Quick.Net.Gateway/"]
+RUN dotnet restore "./src/Quick.Net.OrderApi/Quick.Net.Gateway.csproj"
 COPY . .
-WORKDIR "/src/src/Quick.Net.OrderApi"
-RUN dotnet build "./Quick.Net.OrderApi.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/src/Quick.Net.Gateway"
+RUN dotnet build "./Quick.Net.Gateway.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # 此阶段用于发布要复制到最终阶段的服务项目
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./Quick.Net.OrderApi.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./Quick.Net.Gateway.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 # 此阶段在生产中使用，或在常规模式下从 VS 运行时使用(在不使用调试配置时为默认值)
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Quick.Net.OrderApi.dll"]
+ENTRYPOINT ["dotnet", "Quick.Net.Gateway.dll"]

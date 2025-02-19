@@ -1,9 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Quick.Net.CAP.RabbitMQ.MySql;
-using System.Runtime.CompilerServices;
 
-namespace Quick.Net.CAP
+namespace Quick.Net.Common.CAP
 {
     public static class RabbitMQMySqlBuilderExtensions
     {
@@ -16,7 +13,7 @@ namespace Quick.Net.CAP
                  x.UseRabbitMQ("localhost");
                  x.UseDashboard();
                  //x.EnableConsumerPrefetch = true;
-                 x.UseDispatchingPerGroup = true;
+                 //x.UseDispatchingPerGroup = true;
                  x.EnableSubscriberParallelExecute = true;
                  //x.FailedThresholdCallback = failed =>
                  //{

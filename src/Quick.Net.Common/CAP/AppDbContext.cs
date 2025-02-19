@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Quick.Net.CAP.RabbitMQ.MySql
+namespace Quick.Net.Common.CAP
 {
 
 
