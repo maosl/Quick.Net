@@ -18,6 +18,15 @@ namespace Quick.Net.Gateway
             var builder = WebApplication.CreateBuilder(args);
             //配置中心
             builder.Configuration.AddNacosV2Configuration(builder.Configuration.GetSection("NacosConfig"));
+            // 从环境变量获取宿主机 IP 和映射端口
+            var hostIp = System.Environment.GetEnvironmentVariable("HOST_IP");
+            var hostPort = System.Environment.GetEnvironmentVariable("HOST_PORT");
+            if (!string.IsNullOrEmpty(hostIp) && !string.IsNullOrEmpty(hostPort))
+            {
+                // 更新 Nacos 服务注册配置
+                builder.Configuration["nacos:Ip"] = hostIp; //获取宿主机IP
+                builder.Configuration["nacos:Port"] = hostPort;
+            }
             builder.Services.AddOcelot()
                 .AddNacosDiscovery()
                 .AddPolly();

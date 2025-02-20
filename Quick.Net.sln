@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.11.34929.205
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FD503355-4E14-457A-9DCE-F790187A8955}"
+	ProjectSection(SolutionItems) = preProject
+		src\Quick.Net.GatewayDockerfile = src\Quick.Net.GatewayDockerfile
+		src\Quick.Net.OrderApiDockerfile = src\Quick.Net.OrderApiDockerfile
+		src\Quick.Net.ProductApiDockerfile = src\Quick.Net.ProductApiDockerfile
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{E54B37BA-6480-4EA3-9F02-DFCC6A75670A}"
 EndProject
